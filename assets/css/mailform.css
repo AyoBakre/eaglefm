@@ -37,6 +37,8 @@
 #notification_container .close { position: absolute; top: 2px; right: 2px; font-size: 15px; opacity: 1;}
 
 
+
+
 /*========================================================
                       Contact Form
 =========================================================*/
@@ -73,23 +75,23 @@
     font-size: 16px;
     padding: 10px 10px;
     line-height: 20px;
-    color: #fff;
+    color: #000;
     background: transparent;
     border: 1px solid #878787;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0; }
     .mailform label input:-moz-placeholder, .mailform label select:-moz-placeholder, .mailform label textarea:-moz-placeholder {
-      color: #fff;
+      color: #000;
       opacity: 0.5; }
     .mailform label input::-webkit-input-placeholder, .mailform label select::-webkit-input-placeholder, .mailform label textarea::-webkit-input-placeholder {
-      color: #fff;
+      color: #000;
       opacity: 0.5; }
     .mailform label input::-moz-placeholder, .mailform label select::-moz-placeholder, .mailform label textarea::-moz-placeholder {
-      color: #fff;
+      color: #000;
       opacity: 0.5; }
     .mailform label input:-ms-input-placeholder, .mailform label select:-ms-input-placeholder, .mailform label textarea:-ms-input-placeholder {
-      color: #fff;
+      color: #000;
       opacity: 0.5; }
   .mailform label textarea {
     resize: vertical;
