@@ -1,10 +1,4 @@
 /* ==============================================================
-
-	Project: 	Diamond - Coming Soon Template
-	Version: 	2.1
-	Author:		Art Sound Group
-	Profile:	https://themeforest.net/user/artsoundgroup
-
 -----------------------------------------------------------------
 					*** TABLE OF CONTENTS ***
 -----------------------------------------------------------------
@@ -86,7 +80,7 @@ img {
 
 /* 2. Preload */
 #preload {
-	background: #000;
+	background: cornsilk;
 	height: 100%;
 	left: 0;
 	position: fixed;
@@ -136,7 +130,7 @@ img {
 	height:30px;
 	margin:0 auto;
 	margin-bottom:10px;
-	border:2px solid #fff;
+	border:2px solid rgb(18, 51, 5);
 	box-shadow:0 0 20px 0 rgba(0,0,0,.15);
 	-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.15);
 	-webkit-animation:tp-rotateplane .8s infinite ease-in-out;
@@ -728,6 +722,12 @@ body.nav-button-only #outer-wrapper #inner-wrapper #table-wrapper #row-content #
   -moz-perspective: 1000px;
   -webkit-perspective: 1000px;
   perspective: 1000px;
+}
+
+#logo-svg{
+  width: 350px;
+  padding: 0;
+  margin-top: -50px;
 }
 .content-wrapper .content {
   height: 100%;
