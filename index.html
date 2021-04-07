@@ -62,6 +62,18 @@
                         </div>
                     </div>
                 </div>
+                <div id="row-footer">
+                    <footer>
+						<!-- Social Icons -->
+                        <div class="social" style="margin-top: 30px"> 
+                            <a href="#"><span class="fa fa-envelope  fade-in" title="Email"></span></a>
+							<a href="#"><span class="fa fa-facebook  fade-in" title="Facebook"></span></a>
+                            <a href="#"><span class="fa fa-twitter  fade-in" title="Twitter"></span></a>
+                            <a href="#"><span class="fa fa-instagram  fade-in" title="Instagram"></span></a>
+                            <a href="#"><span class="fa fa-google-plus  fade-in" title="Google Plus"></span></a>
+                        </div>
+                    </footer>
+                </div>
             </div>
         </div>
 
@@ -99,7 +111,8 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                 <h2 id="modal-subscribe-label">Subscribe</h2>
-				<p>Enter your email address to receive exciting news about us first-hand <br>
+				<p>Enter your email address to receive exciting news about us first-hand. <br>
+                    <br>
                 <small>We won't spam. We promise not to share your email with a third party</small> </p>
             </div>
             <div class="modal-body">
@@ -232,7 +245,7 @@
 
 									<div class="col-md-12">
 										<label> 
-											<textarea name="message" id="cf_message" placeholder="Your Offer" tabindex="4" required></textarea> 
+											<textarea name="message" id="cf_message" placeholder="Your Message" tabindex="4" required></textarea> 
 										</label> 
 									</div>		
 									
@@ -275,7 +288,9 @@
                                 </div>
 								<div class="col-md-12 col-sm-4">
 									<!--Google Map-->
-									<div class="map" id="map-contact"></div>
+									<div class="map" >
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6399443300475!2d3.960148314267423!3d6.813574121614657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10396967c9118ad1%3A0x3c3422c1bd5a645e!2sIlese%20Comprehensive%20High%20School!5e0!3m2!1sen!2sng!4v1617752656165!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                    </div>
 								</div>	
                             </div>
                         </section>
@@ -295,47 +310,5 @@
 <script type="text/javascript" src="assets/js/jquery.plugin.min.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
 
-<!-- Google reCaptcha required javascript file -->
-<script src='../../../../../../www.google.com/recaptcha/api.js'></script>
-
-<!--Google Map API KEY-->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw-pWyCA_QVdNdaTMcfq5CI8tHCghnYBI&amp;callback"></script>
-<script type="text/javascript">
-    var latitude = 53.9339419;
-    var longitude = 27.5048208;
-    var markerImage = "assets/img/map-marker.png";
-    var mapTheme = "light";
-    var mapElement = "map-contact";
-    google.maps.event.addDomListener(window, 'load', simpleMap(latitude, longitude, markerImage, mapTheme, mapElement));
-</script>
-
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter43242164 = new Ya.Metrika({
-                    id:43242164,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true,
-                    trackHash:true
-                });
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "../../../../../../mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-	
 </body>
 
