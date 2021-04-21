@@ -19,50 +19,10 @@ var bodyHasResponsiveNavigation = 0;
 				}, 800);
 			});
 		}, 400);
+        var vid = document.getElementById("video");
+    vid.play();
 	});	
-	
-// Parallax //
-	$("#parallax").each(function() {
-		$('#parallax,header .container').parallax({
-			scalarX: 25,
-			scalarY: 15,
-			frictionX: 0.1,
-			frictionY: 0.1,
-			calibrateX: false,
-		});
-	});
-	
-// Form Validation & Send Mail code
-	if(typeof($('.contactForm form')) != 'undefined') {
-		$.each($('.contactForm form'), function(index, el) {
-			var cform = $(el),
-				cResponse = $('<div class="cf_response"></div>');
-			cform.prepend(cResponse);
-			cform.h5Validate();
-
-			cform.submit(function(e) {
-				e.preventDefault();
-				if(cform.h5Validate('allValid')) {
-					cResponse.hide();
-					$.post(
-						$(this).attr('action'),
-						cform.serialize(),
-						function(data){
-							cResponse.html(data).fadeIn('fast');
-							if(data.match('success') != null) {
-								cform.get(0).reset();
-							}
-						}
-					); // end post
-				}
-				return false;
-			});
-		});
-	};
-	
-
-	
-	
+		
 //  Modal windows //	
 	 if( $(".tse-scrollable").length ){
         $(".tse-scrollable").TrackpadScrollEmulator();
@@ -128,36 +88,7 @@ $(document).ready(function($) {
 
 
 
- // Background Ripple // 
-    var ripple = $('#page-ripple');
-
-    if (ripple.length  && !isMobile && !isTouch) {
-      ripple.ripples({
-        resolution: 512,
-        dropRadius: 10, //px
-        perturbance: 0.04,
-        interactive: true
-      });
-
-      setInterval(function () {
-        var $el = ripple;
-        var x = Math.random() * $el.outerWidth();
-        var y = Math.random() * $el.outerHeight();
-        var dropRadius = 20;
-        var strength = 0.04 + Math.random() * 0.04;
-
-        $el.ripples('drop', x, y, dropRadius, strength);
-      }, 3000);
-    }
-
-
-// Responsive Video Scaling //
-    if ($(".video").length > 0) {
-        $(this).fitVids();
-    }
-	
-
-
+ 
 	
 	
 
