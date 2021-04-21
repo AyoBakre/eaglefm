@@ -22,10 +22,6 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/vegas.min.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/mailform.css" type="text/css">
-	
-	<!--Color Style-->
-	<!-- <link rel="stylesheet" href="assets/css/colors/green.css" type="text/css"> -->
-	
 </head>
 
 <body>
@@ -46,7 +42,20 @@
 <div id="outer-wrapper" class="animate translate-z-in">
     <div id="inner-wrapper">
         <div id="table-wrapper">
-            <div class="container center">
+            <div class="container center">  
+                    <div class="music-play">
+                        <div class="play" onclick="play(event);"></div>
+                        <div class="music-text" style="display: none;" id="play-text">
+                            <h6>Play for Non-Stop <span style="color: red;">MUSIC</span></h6>
+                        </div>
+                        <div id='container'>  
+                            <span></span>  
+                            <span></span>  
+                            <span></span>  
+                            <span></span>  
+                            <span></span>  
+                          </div> 
+                    </div>          
                 <div id="row-content">
                     <div id="content-wrapper">
                         <div id="content" class="animate translate-z-in animation-time-2s delay-1-5s">
@@ -302,6 +311,13 @@
 
 
 <div class="backdrop"></div>
+
+<div>
+    <video id="video" autoplay name='media'>
+        <source src="http://node-15.zeno.fm/1fub5gvsvs8uv?rj-ttl=5&amp;rj-tok=AAABeNb6DkwAgo8_BWH1GTsNvQ" type="audio/mpeg">
+      Your browser does not support the video tag.
+    </video>
+</div>
 
 <!--Java Scripts-->
 <script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>

@@ -368,4 +368,24 @@ var viewport = (function() {
 	
 })(jQuery);
 
+var play = function(event){   
+    event.srcElement.classList.toggle("playing");
+    var x = document.getElementById("container");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    var vid = document.getElementById("video");
+    vid.play();
+  } else {
+    x.style.display = "none";
+    var vid = document.getElementById("video");
+    vid.pause();
+  };
+
+  var y = document.getElementById("play-text");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}
 
