@@ -46,7 +46,7 @@
                     <div class="music-play animate translate-z-in animation-time-2s delay-1-5s">
                         <div class="play" onclick="play(event);"></div>
                         <div class="music-text" style="display: none;" id="play-text">
-                            <h6>Play for Non-Stop <span style="color: red;">MUSIC</span></h6>
+                            <h6>Press play to listen to Non-Stop  <span style="color: red;">JAMS</span></h6>
                         </div>
                         <div id='container'>  
                             <span></span>  
@@ -314,13 +314,10 @@
 <div class="backdrop"></div>
 
 <div>
-    <video id="video" name='media'>
+    <audio autoplay id="video" name='media'>
         <source src="http://node-15.zeno.fm/1fub5gvsvs8uv?rj-ttl=5&amp;rj-tok=AAABeNb6DkwAgo8_BWH1GTsNvQ" type="audio/mpeg">
       Your browser does not support the video tag.
-    </video>
-    <script>
-        document.getElementById('video').play();
-    </script>
+    </audio>
 </div>
 
 <!--Java Scripts-->

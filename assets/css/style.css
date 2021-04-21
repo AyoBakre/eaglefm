@@ -2423,8 +2423,8 @@ body::before {
 }
 
 .music-text h6{
-  width: 150px;
-  margin-top: 3px;
+  width: 220px;
+  margin-top: 4px;
   /* Starting position */
   -moz-transform:translateX(100%);
   -webkit-transform:translateX(100%);	
