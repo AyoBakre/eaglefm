@@ -2375,9 +2375,9 @@ body::before {
   position: absolute;
   top: 30px;
   left: 30px;
-  width:80px;
+  width:100px;
   height: 30px;
-  padding-left: 5px;
+  padding: 10px;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -2392,7 +2392,7 @@ body::before {
   margin: 10px;
 }
 
-.play {
+.play.playing {
   transition: all 0.2s;
   opacity: 0.75;
   display: inline-block;
@@ -2405,7 +2405,7 @@ body::before {
   background-color: transparent;
   cursor: pointer;
 }
-.play.playing {
+.play {
   width: 0;
   height: 0;
   border-right: 0;
@@ -2423,16 +2423,16 @@ body::before {
 }
 
 .music-text h6{
-  width: 220px;
+  width: 230px;
   margin-top: 4px;
   /* Starting position */
   -moz-transform:translateX(100%);
   -webkit-transform:translateX(100%);	
   transform:translateX(100%);
   /* Apply animation to this element */	
-  -moz-animation: scroll-left 10s linear infinite;
-  -webkit-animation: scroll-left 10s linear infinite;
-  animation: scroll-left 10s linear infinite;
+  -moz-animation: scroll-left 7s linear infinite;
+  -webkit-animation: scroll-left 7s linear infinite;
+  animation: scroll-left 7s linear infinite;
 }
 
 /* Move it (define the animation) */
@@ -2460,7 +2460,7 @@ body::before {
 #container{  
   position:absolute;
   top: 25px;
-  left: 25px;
+  left: 40px;
 }  
 
 #container span{  
@@ -2502,3 +2502,5 @@ body::before {
   80%{height:15px; background:bule;}  
   100%{height:5px; background:bule;}  
 }
+
+

@@ -19,8 +19,8 @@ var bodyHasResponsiveNavigation = 0;
 				}, 800);
 			});
 		}, 400);
-	});	
-		
+        
+	});
 //  Modal windows //	
 	 if( $(".tse-scrollable").length ){
         $(".tse-scrollable").TrackpadScrollEmulator();
@@ -76,7 +76,6 @@ var bodyHasResponsiveNavigation = 0;
 
 $(document).ready(function($) {
 "use strict"
-
  // Device Detection //
 
     // Mobile Detect
