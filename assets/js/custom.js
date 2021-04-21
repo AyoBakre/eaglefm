@@ -19,6 +19,7 @@ var bodyHasResponsiveNavigation = 0;
 				}, 800);
 			});
 		}, 400);
+        $('video').trigger('play');
 	});	
 		
 //  Modal windows //	
